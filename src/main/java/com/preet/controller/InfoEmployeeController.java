@@ -27,7 +27,7 @@ public class InfoEmployeeController {
     @GetMapping
     public ResponseEntity<?> getEmployeeInfo() {
         logger.info("getEmployeeInfo");
-        List<EmployeeTO> employeeList ;
+        List<EmployeeTO> employeeList;
         try {
             employeeList = infoEmployeeService.getAllEmployee();
             if (CollectionUtils.isEmpty(employeeList)) {
@@ -42,8 +42,8 @@ public class InfoEmployeeController {
 
     @GetMapping(value = "/{id}", produces = {MediaType.APPLICATION_JSON_VALUE})
     public ResponseEntity<?> getEmployeeInfoById(@PathVariable String id) {
-        logger.info("getEmployeeInfoById : {}",id);
-        EmployeeTO employee ;
+        logger.info("getEmployeeInfoById : {}", id);
+        EmployeeTO employee;
         try {
             employee = infoEmployeeService.getEmployeeById(id);
             if (employee != null) {

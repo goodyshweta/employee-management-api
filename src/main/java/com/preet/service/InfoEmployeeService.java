@@ -7,14 +7,12 @@ import java.util.List;
 public interface InfoEmployeeService {
 
     /**
-     *
      * @return
      * @throws Exception
      */
     List<EmployeeTO> getAllEmployee() throws Exception;
 
     /**
-     *
      * @param id
      * @return
      * @throws Exception

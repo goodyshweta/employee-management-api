@@ -37,7 +37,7 @@ public class InfoEmployeeServiceImpl implements InfoEmployeeService {
         if (employeeEntityOptional.isPresent()) {
             EmployeeEntity employeeEntity = employeeEntityOptional.get();
             employeeTO = transform(employeeEntity);
-        }else {
+        } else {
             logger.info("no data found for id : {}", id);
         }
         return employeeTO;
