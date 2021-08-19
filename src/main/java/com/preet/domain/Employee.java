@@ -1,4 +1,4 @@
-package com.preet.dto;
+package com.preet.domain;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -7,7 +7,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class EmployeeTO {
+public class Employee {
 
     private int id;
     private String name;

@@ -16,7 +16,7 @@ import javax.persistence.Table;
 public class EmployeeEntity {
 
     @Id
-    private long id;
+    private int id;
     private String name;
     private String surname;
 }

@@ -33,7 +33,7 @@ public class InfoEmployeeServiceImpl implements InfoEmployeeService {
     public EmployeeTO getEmployeeById(String id) throws Exception {
         logger.info("getEmployeeById : {}", id);
         EmployeeTO employeeTO = null;
-        Optional<EmployeeEntity> employeeEntityOptional = employeeDAO.findById(Long.parseLong(id));
+        Optional<EmployeeEntity> employeeEntityOptional = employeeDAO.findById(Integer.parseInt(id));
         if (employeeEntityOptional.isPresent()) {
             EmployeeEntity employeeEntity = employeeEntityOptional.get();
             employeeTO = transform(employeeEntity);
