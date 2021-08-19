@@ -1,5 +1,6 @@
 package com.preet.controller;
 
+import com.preet.domain.Employees;
 import com.preet.dto.EmployeeTO;
 import com.preet.service.InfoEmployeeService;
 import org.slf4j.Logger;
@@ -33,9 +34,12 @@ public class InfoEmployeeController {
             if (CollectionUtils.isEmpty(employeeList)) {
                 return ResponseEntity.noContent().build();
             } else {
-                return ResponseEntity.ok(employeeList);
+                Employees employees = new Employees();
+                employees.setEmployees(employeeList);
+                return ResponseEntity.ok(employees);
             }
         } catch (Exception e) {
+            e.printStackTrace();
             return ResponseEntity.notFound().build();
         }
     }
@@ -52,6 +56,7 @@ public class InfoEmployeeController {
                 return ResponseEntity.noContent().build();
             }
         } catch (Exception e) {
+            e.printStackTrace();
             return ResponseEntity.notFound().build();
         }
     }
