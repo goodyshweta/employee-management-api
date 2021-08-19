@@ -1,13 +1,13 @@
-package com.preet.employeemanagementapi;
+package com.preet;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EmployeeManagementApiApplication {
+public class EmployeeManagemenApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EmployeeManagementApiApplication.class, args);
+		SpringApplication.run(EmployeeManagemenApplication.class, args);
 	}
 
 }
