@@ -3,3 +3,13 @@ spring:
     password: root@123
     url: jdbc:mysql://localhost:3306/shweta
     username: root
+
+management:
+  endpoints:
+    jmx:
+      exposure:
+        include: "health,info"
+    web:
+      exposure:
+        include: "*"
+        exclude: "env,beans"
