@@ -1,3 +1,4 @@
+/*
 package com.preet.config;
 
 import org.springframework.context.annotation.Bean;
@@ -48,3 +49,4 @@ public class SwaggerConfiguration implements WebMvcConfigurer {
         registry.addResourceHandler("/api/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
     }
 }
+*/
